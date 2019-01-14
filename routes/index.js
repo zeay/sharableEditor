@@ -40,7 +40,7 @@ post(function(req,res,next){
             from: 'shareableEditor <no-reply@shareable.com>',
             to: 'zeayycool@gmail.com',
             subject: 'New contact request from website',
-            text: req.body.message,
+            text: `Name of sender is ${req.body.name}, Email of sender is ${req.body.email} and message give by sender is==> "${req.body.message}"`,
         };
         transporter.sendMail(mailOptions, function(error, info){
             if(error){

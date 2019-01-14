@@ -39,7 +39,7 @@ function(username, password, done){
 passport.use(new FacebookStrategy({ 
     clientID: '2256803397677071',
     clientSecret: '989c020ac9e1d7299d715ed1ddf41c6f',
-    callbackURL: 'http://localhost:3000/auth/facebook/callback',
+    callbackURL: 'https://damp-scrubland-50685.herokuapp.com/auth/facebook/callback',
     profileFields: ['id', 'displayName', 'email']
 }, 
 function(token, refreshToken, profile, done) {
