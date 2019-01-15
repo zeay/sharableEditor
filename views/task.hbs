@@ -60,6 +60,7 @@
 
 
 <script>
+    var alpha = "true";
     var EditorClient = ot.EditorClient;
     var SocketIOAdapter = ot.SocketIOAdapter;
     var CodeMirrorAdapter = ot.CodeMirrorAdapter;
@@ -159,7 +160,6 @@
       // Get audio/video stream
       navigator.getUserMedia({audio: true, video: true}, function(stream){
         // Set your video displays
-          console.log(stream);
         let myVideo = document.getElementById('my-video');
           myVideo.srcObject = stream;
         window.localStream = stream;

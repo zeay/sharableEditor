@@ -1,7 +1,8 @@
 body {
-    min-height: 2000px;
-    margin: 30px;
-    padding-top: 30px;
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+    min-height: 1700px;
 }
 .form-signin {
     max-width: 330px;
@@ -11,11 +12,7 @@ body {
 .CodeMirror {
     height: 600px;
 }
-*, *:before,*:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
+
 #my-video {
     margin-top: 15px;
     width: 280px;
@@ -40,4 +37,31 @@ body {
 
 #my-id {
     font-weight: bold;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-top: auto!important;
+  padding-bottom: 1rem!important;
+  padding-top: 1rem!important;
+  width: 100%;
+  background-color: #50B275;
+}
+.homeElement{
+    margin-left: 35px;
+}
+.footerRow{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.introPara{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.introVideo{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 15px;
 }

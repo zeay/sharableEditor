@@ -1,6 +1,24 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<h1 class="introPara">{{title}}</h1>
+<p class="introPara">Welcome to {{title}} project. We are looking for contributer on this project.</p>
 
 {{#if user}}
   <a href="/createTask" class="btn btn-primary">Create New Task</a>
+ {{else}}
+  <div class="row homeElement"> 
+      <div class="col-md-6">
+          <p class="text-center introVideo">Introduction Video</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/F5xh0LrL8Wo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" class="embed-responsive-item" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-4 col-md-offset-1">
+          <h2>Known Issues</h2>
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item">For Video you have to load script manually by clicking Load unsafe script</li>
+              <li class="list-group-item">Inside Chat=> Enter and autoscroll functionality missing</li>
+              <li class="list-group-item">Running on free heroku server</li>
+              <li class="list-group-item">Mongo Db free tier database get stop automatically </li>
+          </ul>
+          <h4>Check <a href="/about">About</a> to know how to contribute and more</h4>
+      </div>
+  </div>
+
 {{/if}}

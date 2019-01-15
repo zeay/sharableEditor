@@ -7,13 +7,13 @@ var passport = require('passport');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Editor Share Project Looking For Contributors' });
+  res.render('index', { title: 'Sharable Editor' });
 });
 
 
 //about Route
 router.get('/about', function(req, res, next) {
-    res.render('about', {title: 'Editor Share Project'})
+    res.render('about', {title: 'Sharable Editor'})
 });
 
 //contact Route
